@@ -1,14 +1,14 @@
 function generateGearStr() {
 
-  const itemType = document
-    .getElementsByClassName("main-precontents")[0]
-    .getElementsByClassName("breadcrumb")[0]
-    .lastElementChild
-    .childNodes[0]
+  let itemType = document
+    .getElementsByClassName("wowhead-tooltip")[0]
+    .getElementsByTagName("table")[1]
+    .getElementsByTagName("table")[0]
+    .getElementsByTagName("td")[0]
     .innerHTML
     .toLowerCase();
-
-  // example array  ["", "item=123213", "itemname&bonus=1233:123:302"]  
+  
+  // example array  ["", "item=123213", "itemname&bonus=1233:123:302"]
   const urlLocArr = window
     .location
     .pathname
