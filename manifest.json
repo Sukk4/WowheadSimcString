@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Wowhead to Simc",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.wowhead.com/item*",
+        "https://www.wowhead.com/item*"
+      ],
+      "js": ["main.js"]
+    }
+  ]
+}
